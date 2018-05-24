@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Events Game</name>
+    <events>
+        <variable constant="0" name="FaseAtual" sid="6022734632786658" static="0" type="number">1</variable>
+        <variable constant="0" name="PontosPraProximaFase" sid="5168313115558154" static="0" type="number">0</variable>
+        <variable constant="0" name="JogadorDaVez" sid="8476370028351509" static="0" type="number">1</variable>
+        <variable constant="0" name="fechar" sid="1013041597438348" static="0" type="number">0</variable>
+        <event-block sid="6591229985733566">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2783161107423167" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="635378417614868" type="System">
+                    <param id="0" name="Variable">fechar</param>
+                    <param id="1" name="Value">floor(random(1,14))</param>
+                </action>
+                <action id="-11" name="Add to" sid="6457003845240755" type="GuardarI">
+                    <param id="0" name="Instance variable">Fase</param>
+                    <param id="1" name="Value">FaseAtual</param>
+                </action>
+                <action id="-9" name="Set value" sid="959256114119868" type="System">
+                    <param id="0" name="Variable">JogadorDaVez</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8846873319116142">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7214183082520803" type="Dente1">
+                            <param id="0" name="Instance variable">DenteN</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">fechar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="3368487440635975" type="Dente1">
+                            <param id="0" name="Instance variable">Fechar</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2221810364723063">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2122962791313699" type="Dente2">
+                            <param id="0" name="Instance variable">DenteN</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">fechar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="642433455378431" type="Dente2">
+                            <param id="0" name="Instance variable">Fechar</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4626157435643899">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9120517470749273" type="System">
+                            <param id="0" name="Variable">FaseAtual</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3258457478894128">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Set value" sid="4053727567810641" type="Score1">
+                                    <param id="0" name="Instance variable">Score</param>
+                                    <param id="1" name="Value">GuardarI.Score1_2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5674807113694697" type="Score2">
+                                    <param id="0" name="Instance variable">Score</param>
+                                    <param id="1" name="Value">GuardarI.Score2_2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9777989272106361">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9770383684756946" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8830731494197057">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="5968318330267635" type="GuardarI">
+                            <param id="0" name="Instance variable">Musica_Ligado</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="736087525582680" type="Audio">
+                            <param id="0" name="Audio file">awesomeness</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9684874344758917">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1950132107125675" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="197405114600031" type="Score1">
+                    <param id="0" name="Text">Score1.Score</param>
+                </action>
+                <action id="0" name="Set text" sid="2152521755160145" type="Score2">
+                    <param id="0" name="Text">Score2.Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1838599534554507" title="Jogando">
+            <sub-events>
+                <event-block sid="6517388257594598">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7659316304449144" type="Touch">
+                            <param id="0" name="Object">Dente1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4281967515191713">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="3372569278439643" type="Dente1">
+                                    <param id="0" name="Instance variable">Fechar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7190104065362875" type="Crocodilo">
+                                    <param id="0" name="Animation">&quot;Perdeu&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2028824962390713">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7446769541523274" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="9239463450390424" type="System">
+                                    <param id="0" name="Variable">PontosPraProximaFase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="3685146239439992">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="9910048069148732" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="307376298119153" type="Dente1" />
+                                        <action id="-11" name="Add to" sid="8834922678071223" type="Score1">
+                                            <param id="0" name="Instance variable">Score</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="268827926885991" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7324963589077511">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="8195200411590337" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="9108376960993278" type="Dente1" />
+                                        <action id="-11" name="Add to" sid="8988356116647665" type="Score2">
+                                            <param id="0" name="Instance variable">Score</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="3257961915980991" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5543798616329762">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5246788490358221" type="Touch">
+                            <param id="0" name="Object">Dente2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3374054835559278">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="3603525413212449" type="Dente2">
+                                    <param id="0" name="Instance variable">Fechar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1031451158829622" type="Crocodilo">
+                                    <param id="0" name="Animation">&quot;Perdeu&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6112753264784394">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6261167893882905" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="5376950128640386" type="System">
+                                    <param id="0" name="Variable">PontosPraProximaFase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="6998771110592265">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="3232535601092645" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="5292477870832122" type="Dente2" />
+                                        <action id="-11" name="Add to" sid="8013517975349241" type="Score1">
+                                            <param id="0" name="Instance variable">Score</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="2663990370445548" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9085565846475437">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1609534408812114" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="478142136610474" type="Dente2" />
+                                        <action id="-11" name="Add to" sid="9574905646510442" type="Score2">
+                                            <param id="0" name="Instance variable">Score</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="3657661555984581" type="System">
+                                            <param id="0" name="Variable">JogadorDaVez</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="636569430234044" title="Fim de jogo e cotinuação do jogo">
+            <sub-events>
+                <event-block sid="2081471038249463">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="5754781747461381" type="Crocodilo">
+                            <param id="0" name="Animation">&quot;Perdeu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6005676446716069" type="Dente1" />
+                        <action id="-9" name="Destroy" sid="338959360248501" type="Dente2" />
+                    </actions>
+                    <sub-events>
+                        <comment>Tela de Game Over</comment>
+                        <event-block sid="9249470916989291">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="932348168517220" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="1028368276344374" type="FimJ">
+                                    <param id="0" name="X">464</param>
+                                    <param id="1" name="Y">293</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="2931963512942803" type="GO">
+                                    <param id="0" name="X">501</param>
+                                    <param id="1" name="Y">62</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="2892666757241023" type="Score1">
+                                    <param id="0" name="X">435</param>
+                                    <param id="1" name="Y">214</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="5082983528204333" type="Score2">
+                                    <param id="0" name="X">435</param>
+                                    <param id="1" name="Y">321</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="8751287492644634" type="B_menu">
+                                    <param id="0" name="X">364</param>
+                                    <param id="1" name="Y">422</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="1806608046776168" type="B_repetir">
+                                    <param id="0" name="X">524</param>
+                                    <param id="1" name="Y">422</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6431275673584609" type="Jogador1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4216273891722396" type="Jogador2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="33" name="Stop all" sid="9198552252406976" type="Audio" />
+                                <action id="-9" name="Set value" sid="151591380231318" type="System">
+                                    <param id="0" name="Variable">PontosPraProximaFase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="6559812341161331">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="8659732942278435" type="Pontuacao">
+                                            <param id="0" name="Instance variable">J</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="6992396198842757" type="Pontuacao">
+                                            <param id="0" name="X">300</param>
+                                            <param id="1" name="Y">233</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5212038798146187">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="3861834538026192" type="Pontuacao">
+                                            <param id="0" name="Instance variable">J</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="254181313639139" type="Pontuacao">
+                                            <param id="0" name="X">300</param>
+                                            <param id="1" name="Y">339</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="7440357073994164">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="3743390608913012" type="Touch">
+                                    <param id="0" name="Object">B_repetir</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="1053204902711484" type="System" />
+                                <action id="-21" name="Reset global variables" sid="2127511986132839" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="5586211443088085">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="6901226264942777" type="Touch">
+                                    <param id="0" name="Object">B_menu</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="4752406653140174" type="System">
+                                    <param id="0" name="Layout">MenuL</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9669091889424859">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1268506744413434" type="System">
+                            <param id="0" name="Variable">PontosPraProximaFase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12*FaseAtual</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="8889431492552541" type="System">
+                            <param id="0" name="Variable">FaseAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2482498360704616" type="GuardarI">
+                            <param id="0" name="Instance variable">Score1_2</param>
+                            <param id="1" name="Value">Score1.Score</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2181022299483162" type="GuardarI">
+                            <param id="0" name="Instance variable">Score2_2</param>
+                            <param id="1" name="Value">Score2.Score</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="7841396735978437" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4854339293413279" title="Soms">
+            <sub-events>
+                <event-block sid="5350657362445975">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="2508954812007831" type="GuardarI">
+                            <param id="0" name="Instance variable">Som_Ligador</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7367912832345814">
+                            <conditions>
+                                <condition id="14" name="On tap" sid="3624043376355047" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="8835600535078726" type="Audio">
+                                    <param id="0" name="Audio file">click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event creditos</name>
+    <events>
+        <event-block sid="4688085678884082">
+            <conditions>
+                <condition id="3" name="On touched object" sid="45631573686624" type="Touch">
+                    <param id="0" name="Object">B_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="642587505237371" type="System">
+                    <param id="0" name="Layout">MenuL</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>CrocoBite</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1m7ir77m09u5g</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>960</width>
+        <height>540</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Splash</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BackGround" sid="1204426441167829">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9487721655853803" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\User\Desktop\IFRN\Motores\Jogo_1Bimestre\31123638_944219862418824_364623536_o.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Crocodilo" sid="8167714346523108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Jogando" pingpong="0" repeatcount="1" repeatto="0" sid="2835113590133107" speed="5">
+                    <frame duration="1" hotspotX="0.513841" hotspotY="0.445255" original-source="C:\Users\20161170150049\Desktop\CrocoBite\tteste.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Perdeu" pingpong="0" repeatcount="1" repeatto="0" sid="6624320505012973" speed="5">
+                    <frame duration="1" hotspotX="0.513841" hotspotY="0.445255" original-source="C:\Users\User\Desktop\IFRN\Motores\Jogo_1Bimestre\30922060_944219635752180_829452870_o.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0030581" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dente1" sid="1785273053044515">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="DenteN" sid="8681498408099401" type="number" />
+                <instance-variable name="Fechar" sid="7235385089681392" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7895432575612783" speed="5">
+                    <frame duration="1" hotspotX="0.448864" hotspotY="0.496732" original-source="C:\Users\User\Desktop\IFRN\Motores\Jogo_1Bimestre\CrocoBite\Dente.png">
+                        <collision-poly>
+                            <point x="0.238636" y="0.431373" />
+                            <point x="0.943182" y="0.0196078" />
+                            <point x="0.639205" y="0.48366" />
+                            <point x="0.511364" y="0.98366" />
+                            <point x="0.232955" y="0.944444" />
+                            <point x="0.0198864" y="0.800654" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dente2" sid="9712919234180876">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="DenteN" sid="8838814900297739" type="number" />
+                <instance-variable name="Fechar" sid="8508984491264636" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196840604020225" speed="5">
+                    <frame duration="1" hotspotX="0.551136" hotspotY="0.496732" original-source="C:\Users\User\Desktop\IFRN\Motores\Jogo_1Bimestre\CrocoBite\Dente.png">
+                        <collision-poly>
+                            <point x="0.980114" y="0.800654" />
+                            <point x="0.767045" y="0.944444" />
+                            <point x="0.488636" y="0.98366" />
+                            <point x="0.360795" y="0.48366" />
+                            <point x="0.056818" y="0.0196078" />
+                            <point x="0.761364" y="0.431373" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="8096717982350084">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Score1" sid="3513363510209472">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="Score" sid="5989130628823383" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Score2" sid="8250083187006169">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="Score" sid="4894296468006458" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type global="1" name="GuardarI" sid="610880422047261">
+            <plugin id="Arr" />
+            <instance-variables>
+                <instance-variable name="Score1_2" sid="5856277420240377" type="number" />
+                <instance-variable name="Score2_2" sid="4097671595452785" type="number" />
+                <instance-variable name="Fase" sid="4701123596149236" type="number" />
+                <instance-variable name="Som_Ligador" sid="1532068145442755" type="boolean" />
+                <instance-variable name="Musica_Ligado" sid="3972295677265217" type="boolean" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Menu" sid="9177951478819777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8471244312023439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\20161170150049\Desktop\CrocoBite\tela inicial dddd.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="B_Play" sid="5446203561834173">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8370615617506602" speed="5">
+                    <frame duration="1" hotspotX="0.514156" hotspotY="0.505882" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\algo\menu\novoo jogoo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Créditos" sid="8955159758816809">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7607980754536528" speed="5">
+                    <frame duration="1" hotspotX="0.586957" hotspotY="0.537118" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\algo\menu\créditos.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Jogador1" sid="4668238067870521">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8219495679078282" speed="5">
+                    <frame duration="1" hotspotX="0.459796" hotspotY="0.490196" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\algo\jogo\jogador 1.png">
+                        <collision-poly>
+                            <point x="0.101925" y="0.333333" />
+                            <point x="0.574179" y="0.305882" />
+                            <point x="0.574179" y="0.65098" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Jogador2" sid="4806273331272762">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7975620775685159" speed="5">
+                    <frame duration="1" hotspotX="0.43852" hotspotY="0.509804" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\algo\jogo\jogador 2.png">
+                        <collision-poly>
+                            <point x="0.520131" y="0.231373" />
+                            <point x="0.520131" y="0.670588" />
+                            <point x="0.0979325" y="0.356863" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="128052989168031">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="B_Som" sid="8960445401857489">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Ligado" sid="3965957748863015" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Ligado" pingpong="0" repeatcount="1" repeatto="0" sid="1262378000369782" speed="5">
+                    <frame duration="1" hotspotX="0.491947" hotspotY="0.50116" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\ícones\som normal.png">
+                        <collision-poly>
+                            <point x="0.00146413" y="0.0719258" />
+                            <point x="0.491947" y="0.00232019" />
+                            <point x="0.998536" y="0.0464037" />
+                            <point x="0.998536" y="0.955916" />
+                            <point x="0.491947" y="0.99768" />
+                            <point x="0.00146413" y="0.930394" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Desligado" pingpong="0" repeatcount="1" repeatto="0" sid="3273112035646853" speed="5">
+                    <frame duration="1" hotspotX="0.491947" hotspotY="0.50116" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\ícones\som apertado.png">
+                        <collision-poly>
+                            <point x="0.00146413" y="0.0719258" />
+                            <point x="0.491947" y="0.00232019" />
+                            <point x="0.998536" y="0.0464037" />
+                            <point x="0.998536" y="0.955916" />
+                            <point x="0.491947" y="0.99768" />
+                            <point x="0.00146413" y="0.930394" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="B_Musica" sid="2286972875804506">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Ligado" sid="5424505159026544" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Ligado" pingpong="0" repeatcount="1" repeatto="0" sid="1634294416114495" speed="5">
+                    <frame duration="1" hotspotX="0.491947" hotspotY="0.50116" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\ícones\musica.png">
+                        <collision-poly>
+                            <point x="0.00146413" y="0.0719258" />
+                            <point x="0.491947" y="0.00232019" />
+                            <point x="0.998536" y="0.0464037" />
+                            <point x="0.998536" y="0.955916" />
+                            <point x="0.491947" y="0.99768" />
+                            <point x="0.00146413" y="0.930394" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Desligado" pingpong="0" repeatcount="1" repeatto="0" sid="1227289466467625" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\ícones\musica desligado.png">
+                        <collision-poly>
+                            <point x="0.0533333" y="0.0888889" />
+                            <point x="0.5" y="0.0222222" />
+                            <point x="0.961333" y="0.0644444" />
+                            <point x="0.961333" y="0.935556" />
+                            <point x="0.5" y="0.975556" />
+                            <point x="0.0533333" y="0.911111" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Creditos" sid="1778662049077185">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9060750221493287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\Crédito\créditos.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FimJ" sid="4179703134434496">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265969750804697" speed="5">
+                    <frame duration="1" hotspotX="0.487124" hotspotY="0.497863" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\placa  base.png">
+                        <collision-poly>
+                            <point x="0.0329041" y="0.0940171" />
+                            <point x="0.487124" y="0.0811966" />
+                            <point x="0.998569" y="0.00854701" />
+                            <point x="0.96495" y="0.936966" />
+                            <point x="0.00286123" y="0.946581" />
+                            <point x="0.0529328" y="0.497863" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GO" sid="5134607101292827">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2170718075444796" speed="5">
+                    <frame duration="1" hotspotX="0.543027" hotspotY="0.530612" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\game over.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pontuacao" sid="1106528709280933">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="J" sid="3443108252190688" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8817242920494217" speed="5">
+                    <frame duration="1" hotspotX="0.423012" hotspotY="0.507353" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\ontuação.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="B_menu" sid="5066234071095516">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="6904438188337867" speed="5">
+                    <frame duration="1" hotspotX="0.491924" hotspotY="0.496487" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\casa normal.png">
+                        <collision-poly>
+                            <point x="0.000734214" y="0.0644028" />
+                            <point x="0.491924" y="0.00117096" />
+                            <point x="0.999266" y="0.0386417" />
+                            <point x="0.999266" y="0.954333" />
+                            <point x="0.491924" y="0.998829" />
+                            <point x="0.000734214" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Apertado" pingpong="0" repeatcount="1" repeatto="0" sid="6007728943741423" speed="5">
+                    <frame duration="1" hotspotX="0.491924" hotspotY="0.496487" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\casa aperrtado.png">
+                        <collision-poly>
+                            <point x="0.000734214" y="0.0644028" />
+                            <point x="0.491924" y="0.00117096" />
+                            <point x="0.999266" y="0.0386417" />
+                            <point x="0.999266" y="0.954333" />
+                            <point x="0.491924" y="0.998829" />
+                            <point x="0.000734214" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="B_repetir" sid="7480170045267634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="2953828216343602" speed="5">
+                    <frame duration="1" hotspotX="0.491924" hotspotY="0.496487" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\reiniicair normail.png">
+                        <collision-poly>
+                            <point x="0.000734214" y="0.0644028" />
+                            <point x="0.491924" y="0.00117096" />
+                            <point x="0.999266" y="0.0386417" />
+                            <point x="0.999266" y="0.954333" />
+                            <point x="0.491924" y="0.998829" />
+                            <point x="0.000734214" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="7812748330686899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\tela game over\reiniciar apertado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="T_logo" sid="197734702025506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7181976851464158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\animaçãoo logo\caneca.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Caneta" sid="567879399604803">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="208056131266021">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5598525814788075" speed="5">
+                    <frame duration="1" hotspotX="0.556291" hotspotY="0.473029" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\animaçãoo logo\lápis.png">
+                        <collision-poly>
+                            <point x="0.516556" y="0.385892" />
+                            <point x="0.254967" y="0.854772" />
+                            <point x="0.794702" y="0.33195" />
+                            <point x="0.516556" y="0.60166" />
+                            <point x="0.0728477" y="0.854772" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Empresa" sid="2749252605737689">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="280253509157255">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1059783722811386" speed="5">
+                    <frame duration="1" hotspotX="0.514019" hotspotY="0.468927" original-source="C:\Users\Marina\Desktop\Danilo(PJD)\Crocodilo\Telas\animaçãoo logo\nome.png">
+                        <collision-poly>
+                            <point x="0.170561" y="0.0677966" />
+                            <point x="0.502336" y="0.0677966" />
+                            <point x="0.808411" y="0.129944" />
+                            <point x="0.502336" y="0.898305" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>GameL.xml</layout>
+        <layout>MenuL.xml</layout>
+        <layout>Creditos.xml</layout>
+        <layout>Splash.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Events Game.xml</event-sheet>
+        <event-sheet>Events Menu.xml</event-sheet>
+        <event-sheet>Event creditos.xml</event-sheet>
+        <event-sheet>Event Splash.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="10">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="24">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="click.m4a" />
+        <file name="click.ogg" />
+        <file name="crocodile sound effect_01.m4a" />
+        <file name="crocodile sound effect_01.ogg" />
+        <file name="WhatsApp Audio 2018-05-23 at 16.09.57.m4a" />
+        <file name="WhatsApp Audio 2018-05-23 at 16.09.57.ogg" />
+        <file name="bluegrass banjo - country banjo.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="awesomeness.m4a" />
+        <file name="awesomeness.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Events Menu</name>
+    <events>
+        <event-group description="" sid="3748691014122119" title="Mudar layer">
+            <sub-events>
+                <event-block sid="4310083039990031">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7139866906213918" type="Touch">
+                            <param id="0" name="Object">B_Play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="5813327100716655" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="9805095197678044" type="System">
+                            <param id="0" name="Layout">GameL</param>
+                        </action>
+                        <action id="6" name="Stop" sid="237317125615285" type="Audio">
+                            <param id="0" name="Tag">&quot;banjo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3103139372916999">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="2777120988223488" type="Touch">
+                            <param id="0" name="Object">Créditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2709997863315394" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8237010116764042" type="System">
+                            <param id="0" name="Layout">Creditos</param>
+                        </action>
+                        <action id="6" name="Stop" sid="261563695479619" type="Audio">
+                            <param id="0" name="Tag">&quot;banjo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7583428338711484" title="Som">
+            <sub-events>
+                <event-block sid="8383695280719533">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="6744822681773512" type="GuardarI">
+                            <param id="0" name="Instance variable">Som_Ligador</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="960080232872696">
+                            <conditions>
+                                <condition id="14" name="On tap" sid="578854740432238" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="896314995483510" type="Audio">
+                                    <param id="0" name="Audio file">click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4650495606374533">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7567447603297786" type="Touch">
+                            <param id="0" name="Object">B_Som</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6629204015317941">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="5035690949578165" type="B_Som">
+                                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1030067749637645" type="B_Som">
+                                    <param id="0" name="Animation">&quot;Desligado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="6679966447555091" type="GuardarI">
+                                    <param id="0" name="Instance variable">Som_Ligador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5530476050008062">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="5201434189175181" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4117947727412335" type="B_Som">
+                                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="4025536943050962" type="GuardarI">
+                                    <param id="0" name="Instance variable">Som_Ligador</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5589840145428686">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="322088889853758" type="Touch">
+                            <param id="0" name="Object">B_Musica</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5081881969638271">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="3966807750620237" type="B_Musica">
+                                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3558795831570909" type="B_Musica">
+                                    <param id="0" name="Animation">&quot;Desligado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="4381501506185328" type="GuardarI">
+                                    <param id="0" name="Instance variable">Musica_Ligado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="6" name="Stop" sid="589816484105567" type="Audio">
+                                    <param id="0" name="Tag">&quot;banjo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5513723583055988">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4861605895711444" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3795298629858883" type="B_Musica">
+                                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="2051636771030485" type="GuardarI">
+                                    <param id="0" name="Instance variable">Musica_Ligado</param>
+                                </action>
+                                <action id="0" name="Play" sid="977779108890604" type="Audio">
+                                    <param id="0" name="Audio file">bluegrass banjo - country banjo</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;banjo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="9917075759216495">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="7942619053344248" type="GuardarI">
+                    <param id="0" name="Instance variable">Som_Ligador</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5088826890032746" type="B_Som">
+                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5183801809208828">
+            <conditions>
+                <condition id="-22" name="Else" sid="7559905404227494" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1454507879318225" type="B_Som">
+                    <param id="0" name="Animation">&quot;Desligado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6977794206226344">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="277860566551893" type="GuardarI">
+                    <param id="0" name="Instance variable">Musica_Ligado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9041172838354457" type="B_Musica">
+                    <param id="0" name="Animation">&quot;Ligado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9053153068808859">
+            <conditions>
+                <condition id="-22" name="Else" sid="1422777025414684" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7428302925158366" type="B_Musica">
+                    <param id="0" name="Animation">&quot;Desligado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127228150909427">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="225992261062347" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="789797526270444">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="299742595978348" type="GuardarI">
+                            <param id="0" name="Instance variable">Musica_Ligado</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="862247769463987" type="Audio">
+                            <param id="0" name="Audio file">bluegrass banjo - country banjo</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;banjo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

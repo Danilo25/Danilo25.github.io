@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Splash</name>
+    <events>
+        <event-block sid="756677704007072">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="868878422506823" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="135884562235161" type="Audio">
+                    <param id="0" name="Audio file">WhatsApp Audio 2018-05-23 at 16.09.57</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Splash&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="842552591847849" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="853729124686642" type="System">
+                    <param id="0" name="Layout">MenuL</param>
+                </action>
+                <action id="6" name="Stop" sid="672849789636585" type="Audio">
+                    <param id="0" name="Tag">&quot;Splash&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="857689126991454">
+            <conditions>
+                <condition id="14" name="On tap" sid="982138413205427" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="238240136249969" type="System">
+                    <param id="0" name="Layout">MenuL</param>
+                </action>
+                <action id="6" name="Stop" sid="183796037614255" type="Audio">
+                    <param id="0" name="Tag">&quot;Splash&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
