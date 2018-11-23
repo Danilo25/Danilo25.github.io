@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1542419806,
+	"version": 1542994434,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -9,10 +9,15 @@
 		"images/letra-sheet1.png",
 		"images/sensor-sheet0.png",
 		"images/abc-sheet0.png",
+		"images/abc-sheet1.png",
 		"images/correto-sheet0.png",
 		"images/correto2-sheet0.png",
 		"images/errado-sheet0.png",
 		"images/fundo-sheet0.png",
+		"images/background-sheet0.png",
+		"images/botao-sheet0.png",
+		"images/botao-sheet1.png",
+		"images/risco-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
