@@ -2,21 +2,15 @@
 Danilo Aciole O==|__________/
 
 ### Markdown
-
-
 Progamador
+
 # Contatos
-##
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Jogos
 
-# Header 1
+### Artes
 
-## Header 2
-
-### Header 3
+#### Alunos
 
 - Bulleted
 - List
