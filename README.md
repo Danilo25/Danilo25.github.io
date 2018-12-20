@@ -4,13 +4,13 @@ Danilo Aciole O==|__________/
 1.Adicionar apenas link(URL)
 [CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
 
-2.Transformar o link em imagem (url + imagem)
+2.Adicionar imagem da internet (link pra imagem)
 ![CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
 
-3.[CrocoBite](https://danilo25.github.io/CrocoBite/)
+3. Imagem e Link (url + arquivo)
+[![imagem](Crocodilo.jpg)](https://danilo25.github.io/CrocoBite/)
 
-
-4.Adicionar apens imagem
+4.Adicionar apenas imagem (arquivo)
 ![imagem](Crocodilo.jpg)
 
 ### Markdown
