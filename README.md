@@ -1,6 +1,7 @@
 ## Meu Portifolio
 Danilo Aciole O==|__________/
-
+# ***Sobre EU***
+Estudante de Progamação de Jogos Digitais (PJD) do IFRN campus Ceará- Mirim, nascido em Natal dia 25/05/2001, ex-aluno do Colegio de Santa Agueda, me interessei pela areá de programação de jogos convertido para o software livre pelo professor baesse
 ### Markdown
 Progamador
 
