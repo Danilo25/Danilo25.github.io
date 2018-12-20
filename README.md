@@ -9,8 +9,7 @@ Danilo Aciole O==|__________/
 3.Adicionar apenas imagem (arquivo)
 ![imagem](Crocodilo.jpg)
 
-4. Imagem e Link (url + arquivo)
-[![imagem](Crocodilo.jpg)](https://danilo25.github.io/CrocoBite/)
+4. Imagem e Link (url + arquivo)[![imagem](Crocodilo.jpg)](https://danilo25.github.io/CrocoBite/)
 
 
 5. Imagem e Link para abrir outra aba (url + arquivo)
