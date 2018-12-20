@@ -4,14 +4,17 @@ Danilo Aciole O==|__________/
 1.Adicionar apenas link(URL)
 [CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
 
-2.Adicionar imagem da internet (link pra imagem)
-![CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
+2.Adicionar imagem da internet (link pra imagem)![CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
 
-3. Imagem e Link (url + arquivo)
+3.Adicionar apenas imagem (arquivo)
+![imagem](Crocodilo.jpg)
+
+4. Imagem e Link (url + arquivo)
 [![imagem](Crocodilo.jpg)](https://danilo25.github.io/CrocoBite/)
 
-4.Adicionar apenas imagem (arquivo)
-![imagem](Crocodilo.jpg)
+
+5. Imagem e Link para abrir outra aba (url + arquivo)
+<a href="https://danilo25.github.io/CrocoBite/" target="_blank"> ![imagem](Crocodilo.jpg) </a>
 
 ### Markdown
 Progamador
