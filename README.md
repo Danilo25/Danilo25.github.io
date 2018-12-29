@@ -7,9 +7,9 @@ Danilo, estudante de Jogos Digitais do IFRN campus de Ceará-Mirm, interessado n
 
 Jogos feitos na materia de oficina com o professor Marcelo Barros
 
-********Jogo1: CrocoBite******** 
+******Jogo1: CrocoBite****** 
 
-********Descrição: Você é corajoso o suficiente para pegar mais dentes de jacaré que seu adversário?********
+******Descrição: Você é corajoso o suficiente para pegar mais dentes de jacaré que seu adversário?******
 
 5. Imagem e Link para abrir outra aba (url + arquivo)
 
