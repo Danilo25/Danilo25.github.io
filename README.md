@@ -1,56 +1,30 @@
 ## Meu Portifolio
+### Quem sou eu?
+![imagem](Perfil.png) 
+Danilo, estudante de Jogos Digitais do IFRN campus de Ceará-Mirm, interessado na área de programação
 
-![imagem](Perfil.png) Danilo Aciole O==|__________/
+##Jogos
 
-1.Adicionar apenas link(URL)
-[CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
-
-2.Adicionar imagem da internet (link pra imagem)![CrocoBite](https://ep00.epimg.net/elpais/imagenes/2016/05/12/ciencia/1463056020_205639_1463060534_noticia_normal.jpg)
-
-3.Adicionar apenas imagem (arquivo)
-![imagem](Crocodilo.jpg)
-
-4. Imagem e Link (url + arquivo)[![imagem](Crocodilo.jpg)](https://danilo25.github.io/CrocoBite/)
-
+Jogos feitos na materia de oficina com o professor Marcelo Barros
+********Jogo1: CrocoBite******** 
+********Descrição: Você é corajoso o suficiente pra pegar mais dentes de jacaré que seu adversario?********
 
 5. Imagem e Link para abrir outra aba (url + arquivo)
 <a href="https://danilo25.github.io/CrocoBite/" target="_blank"> ![imagem](Crocodilo.jpg) </a>
 
-### Markdown
-Progamador
+********Jogo2: SizeCompanions******** 
+********Descrição: Será que o companherismo dessa elfa e ana será capaz de encontrar o tesouro?********
 
-# Contatos
-1. Facebook
-2. Instagran
-3. Sei lá
-4. Já ta querendo demais
-## Jogos
-_**Jogos**_
+5. Imagem e Link para abrir outra aba (url + arquivo)
+<a href="https://danilo25.github.io/SizeCompanions2" target="_blank"> ![imagem](Crocodilo.jpg) </a>
 
-**Jogo 1**
+********Jogo3: Flamba******** 
+********Descrição: Flamba precisa manter sua temperatura até chegar no iglu para esquentar seus moradores!!********
 
-_Jogo 2_
-### Artes
+5. Imagem e Link para abrir outra aba (url + arquivo)
+<a href="https://raixasantos.github.io/Flamba/" target="_blank"> ![imagem](Crocodilo.jpg) </a>
 
-#### Alunos
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Danilo25/Danilo25.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Contatos
+1. ****E-mail:**** danilo25aciole@gmail.com e danilowork25@gmail.com
+2. ****Instagram:**** danilo_sba
