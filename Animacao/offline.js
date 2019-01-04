@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1546564323,
+	"version": 1546594307,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,9 +10,6 @@
 		"images/personagem-sheet0.png",
 		"images/tela-sheet0.png",
 		"images/a_personagem-sheet0.png",
-		"images/a_personagem-sheet1.png",
-		"images/a_personagem-sheet2.png",
-		"images/a_personagem-sheet3.png",
 		"media/run.ogg",
 		"media/back.ogg",
 		"media/jump.ogg",
