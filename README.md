@@ -1,5 +1,5 @@
 ## Meu Portifolio
-## Quem sou eu? ![imagem](Perfil.png) Danilo, estudante de Jogos Digitais do IFRN campus de Ceará-Mirm, interessado na área de programação
+## Quem sou eu? Danilo, estudante de Jogos Digitais do IFRN campus de Ceará-Mirm, interessado na área de programação
 
 ### Jogos
 
